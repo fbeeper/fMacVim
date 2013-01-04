@@ -30,6 +30,7 @@ I provide you with two options:
 Another option is to clone this repo and execute the installation script
 
 	git clone http://github.com/fbeeper/fMacVim.vim 
+	cd fMacVim 
 	./fvim.sh
 
 Besides the oportunity of re-customization, this installation includes terminal
