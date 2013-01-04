@@ -29,7 +29,7 @@ I provide you with two options:
 
 Another option is to clone this repo and execute the installation script
 
-	git clone http://github.com/fbeeper/fMacVim.vim 
+	git clone git://github.com/fbeeper/fMacVim.git 
 	cd fMacVim 
 	./fvim.sh
 
