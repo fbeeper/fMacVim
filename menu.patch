@@ -1,0 +1,13 @@
+--- menu.vim	2012-12-07 14:31:01.000000000 +0100
++++ menu.vim	2012-12-07 14:38:26.000000000 +0100
+@@ -1216,8 +1216,8 @@
+   macm Window.Zoom		key=<D-C-z>	action=performZoom:
+   macm Window.Zoom\ All		key=<D-M-C-z>	action=zoomAll:		alt=YES
+   macm Window.Toggle\ Full\ Screen\ Mode	key=<D-C-f>
+-  macm Window.Select\ Next\ Tab			key=<D-}>
+-  macm Window.Select\ Previous\ Tab		key=<D-{>
++  macm Window.Select\ Next\ Tab			key=<C-tab>
++  macm Window.Select\ Previous\ Tab		key=<C-S-tab>
+   macm Window.Bring\ All\ To\ Front		action=arrangeInFront:
+ 
+   macm Help.MacVim\ Help			key=<D-?>

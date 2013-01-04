@@ -2,7 +2,11 @@
 fMacVim 
 =======
 
-[MacVim](https://github.com/b4winckler/macvim) + essential plugins + my custom .vimrc
+[MacVim](https://github.com/b4winckler/macvim) + essential plugins + my custom
+.vimrc
+
+
+**I don't know if this works at the moment. Download it at your own risk :P**
 
 Introduction 
 ------------
@@ -11,8 +15,9 @@ I don't see this as another collection of dotfiles, but a selection of
 the best plugins and configs for those willing to enjoy the power of Vim on
 their Mac.
 
-Somehow I was inspired by [YADR](https://github.com/skwp/dotfiles) and [spf13-vim](https://github.com/spf13/spf13-vim), but I did
-not wanted to have such a big package, I wanted to **keep it simpler**. 
+Somehow I was inspired by [YADR](https://github.com/skwp/dotfiles) and
+[spf13-vim](https://github.com/spf13/spf13-vim), but I did not wanted to have
+such a big package, I wanted to **keep it simpler**. 
 
 <br />
 Installation
@@ -32,8 +37,8 @@ support for the customized Vim.
 
 ### 2) Easiest install
 
-I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and configs for you to drag and drop it into
-your /Applications directory:
+I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and
+configs for you to drag and drop it into your /Applications directory:
 
 [Download](https://github.com/fbeeper/fMacVim)
 
@@ -43,12 +48,13 @@ Details
 
 fMacVim includes:
 
-* The best .vimrc I've been able to curate (no blogger/githubber was harmed on this process :P).  
-Even though I didn't kept it minimal, I've made an effort to organize and comment everything. You should take a look at it!
+* The best .vimrc I've been able to curate (no blogger/githubber was harmed on
+  this process :P).  Even though I didn't kept it minimal, I've made an effort
+  to organize and comment everything. You should take a look at it!
 
 * A personal selection of essential vim plugins:
 
- * [pathogen.vim](http://github.com/tpope/vim-pathogen) (super easy plugin
+ * [Pathogen.vim](http://github.com/tpope/vim-pathogen) (super easy plugin
    management) by Tim Pope
 
  * [Solarized](http://github.com/altercation/vim-colors-solarized) (pleasant
@@ -75,7 +81,7 @@ Even though I didn't kept it minimal, I've made an effort to organize and commen
  * [SnipMate](git clone http://github.com/garbas/vim-snipmate) (snippets
    gallore!) originally by Michael Sanders but current package by Rok Garbas
 
- * [fugitive.vim](http://github.com/tpope/vim-fugitive) (nice git integration)
+ * [Fugitive.vim](http://github.com/tpope/vim-fugitive) (nice git integration)
    by Tim Pope
 
  * [Gitv](http://github.com/gregsexton/gitv) ('gitk clone' plugin for fugitive)
@@ -117,14 +123,15 @@ Even though I didn't kept it minimal, I've made an effort to organize and commen
 
  * ``,`` is mapped as Vim's ``<leader>`` (just in case you need it)
  * ``,`` ``cl``/``cu`` Comment/uncomment lines thanks to NERDCommenter
- * ``z`` ``f``/``d`` Create/Delete folds (configured to work manually and will be
-   preserved between sessions)
+ * ``z`` ``f``/``d`` Create/Delete folds (configured to work manually and will
+   be preserved between sessions)
  * ``Space`` Will toggle folds in normal mode
  * ``,`` ``n`` Toggle line numbering mode in normal mode
  * And a huge list of things Vim could do
 
 
-Anyway, I strongly encourage you to have a look at my .vimrc to discover what changes/customizations I've done! :D
+Anyway, I strongly encourage you to have a look at my .vimrc to discover what
+changes/customizations I've done! :D
 
 <br />
 What's the future of fMacVim?
@@ -132,18 +139,21 @@ What's the future of fMacVim?
 
 This is nowhere near to be perfect, so I expect to bring future updates.
 
-* I should build .vimrc and .gvimrc separatedly to avoid having some warnings
-  I'm getting right now (sorry for that, but I don't have much time and I want to deliver something :P)
+* The installer could be improved, an updater would be really cool!
+* I should build .vimrc and .gvimrc separatedly
 * I should consider splitting the .vimrc to make it easier to maintain
 * I will consider creating a custom Toolbar/Menu
 * A better documentation of changes will be interesting, don't you think?
 
-I'd be pleased to hear any comments, ideas, code, questions or whatever you may want to say!
+I'd be pleased to hear any comments, ideas, code, questions or whatever you may
+want to say!
 
-You'll easily find me at: [github.com/fbeeper](https://github.com/fbeeper) or [@fbeeper](http://twitter.com/fbeeper)
+You'll easily find me at: [github.com/fbeeper](https://github.com/fbeeper) or
+[@fbeeper](http://twitter.com/fbeeper)
 
-<br />
-License
--------
+<br /> 
+License 
+------- 
+
 JIC anybody asks, the Vim licence seems a good fit ;)
 
