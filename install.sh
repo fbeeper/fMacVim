@@ -76,7 +76,7 @@ then
 		
 		*) 
 			cd $tmpdownload
-			curl -L "https://github.com/downloads/b4winckler/macvim/MacVim-snapshot-64.tbz" -o macvim.tbz
+			curl -L "https://github.com/downloads/b4winckler/macvim/MacVim-snapshot-65.tbz" -o macvim.tbz
 			tar -xjf macvim.tbz
 			cd MacVim-snapshot-64
  
