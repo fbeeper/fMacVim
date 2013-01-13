@@ -1,4 +1,3 @@
-
 fMacVim 
 =======
 
@@ -6,18 +5,22 @@ fMacVim
 .vimrc
 
 
-**I don't know if this works at the moment. Download it at your own risk :P**
-
 Introduction 
 ------------
 
-I don't see this as another collection of dotfiles, but a selection of
-the best plugins and configs for those willing to enjoy the power of Vim on
+I don't see this as another collection of dotfiles, but a practical selection 
+of the best plugins and configs for those willing to enjoy the power of Vim on
 their Mac.
 
 Somehow I was inspired by [YADR](https://github.com/skwp/dotfiles) and
 [spf13-vim](https://github.com/spf13/spf13-vim), but I did not wanted to have
 such a big package, I wanted to **keep it even simpler**. 
+
+If you don't like the idea of the complete package, I strongly encourage you 
+to scrabble and take anything you may like in here! But I expect you to at 
+least say hi if you like it :P This includes Linux users, most of the code in
+here must work there as well.
+
 
 <br />
 Installation
@@ -41,7 +44,7 @@ support for the customized Vim, including the Solarized theme.
 I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and
 configs for you to drag and drop it into your /Applications directory:
 
-[Download and enjoy!](https://github.com/fbeeper/fMacVim)
+[Download and enjoy!](https://www.dropbox.com/s/258ayi5tmkddypb/fMacVim.dmg)
 
 <br /> 
 Details  
@@ -63,6 +66,9 @@ fMacVim includes:
 
  * [Powerline](http://github.com/Lokaltog/vim-powerline) (cool statusline
    replacement) by Kim Silkebækken
+
+ * [Menlo patched for powerline](http://gist.github.com/1627888) (nice font
+   with support for Powerline coolness) by Steve Losh
 
  * [NERDTree](https://github.com/scrooloose/nerdtree) (useful file system
    explorer) by Martin Grenfell
@@ -148,6 +154,8 @@ This is nowhere near to be perfect, so I expect to bring future updates.
 * A better documentation would be interesting, wouldn't it?
 * I've got some shortcuts/functions I haven't added to this release I might add
   in the future. Or not... because it would mean not keeping this simple.
+* I really want to make this package compatible for Linux too, with gtk-vim 
+  instead :)
 
 I'd be pleased to hear any comments, ideas, code, questions or whatever you may
 want to say!
@@ -159,5 +167,8 @@ You'll easily find me at: [github.com/fbeeper](https://github.com/fbeeper) or
 License 
 ------- 
 
-JIC anybody asks, the Vim licence seems a good fit ;)
+JIC anybody asks, the Vim licence seems a good fit for any of the "work" I've
+done packing this ;) For any other concerns about licensing, take a look at
+
+	:help license
 
