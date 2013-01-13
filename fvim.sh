@@ -56,6 +56,7 @@ then
 				echo -ne " \x1B[00;32mDONE\x1B[00m\n"
 				echo -ne "Installing MacVim (by Björn Winckler)..."
 				$brew_cmd install macvim
+				ln -s /usr/local/Cellar/macvim/7.3-65/MacVim.app /Applications
 				echo -ne " \x1B[00;32mDONE\x1B[00m\n"
 			else
 				echo -ne "\x1B[00;31mYou need either XCode or Ruby on your system to proceed. Leaving!\n\x1B[00m"
