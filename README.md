@@ -17,35 +17,35 @@ their Mac.
 
 Somehow I was inspired by [YADR](https://github.com/skwp/dotfiles) and
 [spf13-vim](https://github.com/spf13/spf13-vim), but I did not wanted to have
-such a big package, I wanted to **keep it simpler**. 
+such a big package, I wanted to **keep it even simpler**. 
 
 <br />
 Installation
 ------------
 
-I provide you with two options:
+I provide you with two options (the easy or the easiest):
 
 ### 1) Easy install
 
-Another option is to clone this repo and execute the installation script
+Another option is to clone this repositoty and execute the installation script:
 
 	git clone git://github.com/fbeeper/fMacVim.git 
 	cd fMacVim 
 	./fvim.sh
 
-Besides the oportunity of re-customization, this installation includes terminal
-support for the customized Vim.
+Besides the opportunity of re-customization, this installation includes terminal
+support for the customized Vim, including the Solarized theme.
 
 ### 2) Easiest install
 
 I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and
 configs for you to drag and drop it into your /Applications directory:
 
-[Download](https://github.com/fbeeper/fMacVim)
+[Download and enjoy!](https://github.com/fbeeper/fMacVim)
 
-<br />
+<br /> 
 Details  
-------------------------
+-------
 
 fMacVim includes:
 
@@ -70,7 +70,7 @@ fMacVim includes:
  * [NERDCommenter](http://github.com/scrooloose/nerdcommenter) (comment your
    code easily ,cl ,cu) by Martin Grenfell
 
- * [Signature](http://github.com/kshenoy/vim-signature) (pimped marks and signs)
+ * [Signature](http://github.com/kshenoy/vim-signature) (easy marks and signs)
    by kshenoy
 
  * [Clang complete](http://github.com/Rip-Rip/clang_complete) (C/C++ completion
@@ -80,7 +80,7 @@ fMacVim includes:
    completion) by Eric Van Dewoestine
 
  * [SnipMate](git clone http://github.com/garbas/vim-snipmate) (snippets
-   gallore!) originally by Michael Sanders but current package by Rok Garbas
+   galore!) originally by Michael Sanders but current package by Rok Garbas
 
  * [Fugitive.vim](http://github.com/tpope/vim-fugitive) (nice git integration)
    by Tim Pope
@@ -122,7 +122,7 @@ fMacVim includes:
 
  *Other bindings*
 
- * ``,`` is mapped as Vim's ``<leader>`` (just in case you need it)
+ * ``,`` is mapped as Vim's ``<leader>`` (just in case you look for it)
  * ``,`` ``cl``/``cu`` Comment/uncomment lines thanks to NERDCommenter
  * ``z`` ``f``/``d`` Create/Delete folds (configured to work manually and will
    be preserved between sessions)
@@ -140,11 +140,14 @@ What's the future of fMacVim?
 
 This is nowhere near to be perfect, so I expect to bring future updates.
 
-* The installer could be improved, an updater would be really cool!
-* I should build .vimrc and .gvimrc separatedly
-* I should consider splitting the .vimrc to make it easier to maintain
-* I will consider creating a custom Toolbar/Menu
-* A better documentation of changes will be interesting, don't you think?
+* I don't like my own installer, I'm thinking what to do with that...
+* An updater would be really necessary!
+* I should build .vimrc and .gvimrc separately.
+* I should consider splitting the .vimrc to make it easier to navigate/maintain.
+* I will consider creating a custom Toolbar/Menu.
+* A better documentation would be interesting, wouldn't it?
+* I've got some shortcuts/functions I haven't added to this release I might add
+  in the future. Or not... because it would mean not keeping this simple.
 
 I'd be pleased to hear any comments, ideas, code, questions or whatever you may
 want to say!
