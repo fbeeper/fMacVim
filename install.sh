@@ -78,7 +78,7 @@ then
 			cd $tmpdownload
 			curl -L "https://github.com/downloads/b4winckler/macvim/MacVim-snapshot-65.tbz" -o macvim.tbz
 			tar -xjf macvim.tbz
-			cd MacVim-snapshot-64
+			cd MacVim-snapshot-65
  
 			mv MacVim.app /Applications/
 			mv mvim /usr/local/bin/
