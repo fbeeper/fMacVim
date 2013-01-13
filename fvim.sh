@@ -27,7 +27,7 @@ confirm () {
 #										Via Homebrew or compiling it...		   #
 ################################################################################
 
-tmpdownload="~/Downloads"
+tmpdownload="$HOME/Downloads"
 brew_cmd=`which brew`
 ruby_cmd=`which ruby`
 clng_cmd=`which clang`
@@ -82,6 +82,9 @@ then
  
 			mv MacVim.app /Applications/
 			mv mvim /usr/local/bin/
+
+			cd ..
+			rm -rf macvim.tbz MacVim-snapshot-64
 			;;
 
 	esac
