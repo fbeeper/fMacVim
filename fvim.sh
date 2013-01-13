@@ -84,6 +84,7 @@ then
 				make
 				cd MacVim/build/Release
 				cp -R MacVim.app /Applications/MacVim.app
+				mv mvim /usr/local/bin/
 				rm -rf /tmp/macvim
 				echo -ne " \x1B[00;32mDONE\x1B[00m\n"
 			else
