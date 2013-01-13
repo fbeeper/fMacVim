@@ -27,6 +27,7 @@ confirm () {
 #										Via Homebrew or compiling it...		   #
 ################################################################################
 
+tmpdownload="~/Downloads"
 brew_cmd=`which brew`
 ruby_cmd=`which ruby`
 clng_cmd=`which clang`
@@ -38,39 +39,19 @@ if [[ ! -d $mvim_cmd ]]
 then
 	echo -ne " \x1B[00;31mNO\x1B[00m\n"
 	
+	echo -ne "Choose...\n"
+	echo -ne "   *) Download the latest binary snapshot (default in 5 seconds)\n"
+	echo -ne "   1) Compile from source\n"
+	
+	read -t 5 n
+	case $n in
 
-	#echo -ne "Checking for Homebrew..."
-	#if [[ ! -f $brew_cmd ]]
-	#then
-		
-	#    echo -ne " \x1B[00;31mNO\n\x1B[00;34m"
-
-	#    if confirm "Do you want to install Homebrew packet manager now? [y/N]" 
-	#    then
-
-	#        echo -ne "\x1B[00m"
-	#        if [[ -f $ruby_cmd ]]
-	#        then
-	#            echo -ne "Installing Homebrew..."
-	#            ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-	#            echo -ne " \x1B[00;32mDONE\x1B[00m\n"
-	#            echo -ne "Installing MacVim (by Björn Winckler)..."
-	#            $brew_cmd install macvim
-	#            ln -s /usr/local/Cellar/macvim/7.3-65/MacVim.app /Applications
-	#            echo -ne " \x1B[00;32mDONE\x1B[00m\n"
-	#        else
-	#            echo -ne "\x1B[00;31mYou need either XCode or Ruby on your system to proceed. Leaving!\n\x1B[00m"
-	#            exit -1
-	#        fi
-
-	#    else
-
-			echo -ne "\x1B[00m"
+		1) 
 			if [[ -f $clng_cmd ]]
 			then
 				echo -ne "Compiling MacVim (by Björn Winckler)"
-				git clone git://github.com/b4winckler/macvim.git /tmp/macvim
-				cd /tmp/macvim/src
+				git clone git://github.com/b4winckler/macvim.git $tmpdownload/macvim
+				cd $tmpdownload/macvim/src
 				CC=clang ./configure --with-features=huge \
 					--with-tlib=ncurses \
 					--enable-multibyte \
@@ -85,21 +66,25 @@ then
 				cd MacVim/build/Release
 				cp -R MacVim.app /Applications/MacVim.app
 				mv mvim /usr/local/bin/
-				rm -rf /tmp/macvim
+				rm -rf $tmpdownload/macvim
 				echo -ne " \x1B[00;32mDONE\x1B[00m\n"
 			else
 				echo -ne "\x1B[00;31mYou need XCode command line tools installed to proceed. Leaving!\n\x1B[00m"
 				exit -1
 			fi
+			;;
+		
+		*) 
+			cd $tmpdownload
+			curl -L "https://github.com/downloads/b4winckler/macvim/MacVim-snapshot-64.tbz" -o macvim.tbz
+			tar -xjf macvim.tbz
+			cd MacVim-snapshot-64
+ 
+			mv MacVim.app /Applications/
+			mv mvim /usr/local/bin/
+			;;
 
-	#    fi
-
-	#else
-	#    echo -ne " \x1B[00;32mYES\x1B[00m\n"
-	#    echo -ne "Installing MacVim (by Björn Winckler)..."
-	#    $brew_cmd install macvim
-	#    echo -ne " \x1B[00;32mDONE\x1B[00m\n"
-	#fi
+	esac
 
 else
 
@@ -127,10 +112,10 @@ echo -e "\t- Menlo patched for powerline (by Steve Losh)"
 echo -e "\t- Shortcut to go to line ends fn + <- / ->"
 echo -e "\t- Only visual bell alert"
 echo "   *** Vim needs this to render the theme properly on the Terminal"
-git clone git://gist.github.com/1627888.git /tmp/menlofp
-unzip /tmp/menlofp/Menlo-ForPowerline.ttc.zip
-mv Menlo-ForPowerline.ttc ~/Library/Fonts/Menlo-ForPowerline.ttc
-rm -rf /tmp/menlofp
+git clone git://gist.github.com/1627888.git $tmpdownload/menlofp
+unzip $tmpdownload/menlofp/Menlo-ForPowerline.ttc.zip
+cp Menlo-ForPowerline.ttc ~/Library/Fonts/Menlo-ForPowerline.ttc
+rm -rf $tmpdownload/menlofp
 open "$current_path"/fSolarized.terminal
 osascript -e 'tell application "Terminal"' -e 'close front window' -e 'end tell'
 osascript -e 'tell application "Terminal" to set default settings to settings set "fSolarized"'
@@ -154,10 +139,10 @@ echo -e "   * \x1B[00;36mpathogen.vim\x1B[00m (super easy plugin management)"
 echo "     by Tim Pope"
 curl -Sso ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-##cd /tmp/
+##cd $tmpdownload/
 ##git clone git://github.com/tpope/vim-pathogen.git
-##cp /tmp/autoload/pathogen.vim ~/.vim/autoload/
-##rm -rf /tmp/auto
+##cp $tmpdownload/autoload/pathogen.vim ~/.vim/autoload/
+##rm -rf $tmpdownload/auto
 echo -ne "     \x1B[00;32mDONE\x1B[00m\n"
 
 cd ~/.vim/bundle
@@ -238,7 +223,7 @@ patch ~/.vim/menu.vim < "$current_path"/menu.patch
 
 echo -e "\n   * \x1B[00;36mSetting up a pimped .vimrc\x1B[00m"
 echo "     assembled by me (Ferran Poveda)"
-mv -f "$current_path"/vimrc $mvim_internals/vimrc
+cp -f "$current_path"/vimrc $mvim_internals/vimrc
 
 
 echo -en "\n4) \x1B[00;34mCleaning cache, generating help tags, finishing...\x1B[00m"

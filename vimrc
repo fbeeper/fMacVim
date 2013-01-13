@@ -254,7 +254,6 @@ function! AutocloseOn()
 	inoremap [ []<left>
 	inoremap " ""<left>
 	inoremap ' ''<left>
-	echo "Auto-closing brackets ON"
 endfunc
 call AutocloseOn()
 
@@ -264,7 +263,6 @@ function! AutocloseOff()
 	inoremap [ [
 	inoremap " "
 	inoremap ' '
-	echo "Auto-closing brackets OFF"
 endfunc
 
 function! CmdLine(str)
