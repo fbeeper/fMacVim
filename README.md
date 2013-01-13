@@ -10,16 +10,14 @@ Introduction
 
 I don't see this as another collection of dotfiles, but a practical selection 
 of the best plugins and configs for those willing to enjoy the power of Vim on
-their Mac.
-
-Somehow I was inspired by [YADR](https://github.com/skwp/dotfiles) and
+their Mac. Somehow I was inspired by [YADR](https://github.com/skwp/dotfiles) and
 [spf13-vim](https://github.com/spf13/spf13-vim), but I did not wanted to have
 such a big package, I wanted to **keep it even simpler**. 
 
-If you don't like the idea of the complete package, I strongly encourage you 
-to scrabble and take anything you may like in here! But I expect you to at 
-least say hi if you like it :P This includes Linux users, most of the code in
-here must work there as well.
+If you don't like the idea of the complete package, **I strongly encourage you 
+to scrabble and take anything you may like in here**! But I expect you to (at 
+least) say hi if you like it :P This includes GNU/Linux users, because most of 
+the code in here must work as well for you.
 
 
 <br />
@@ -42,7 +40,8 @@ support for the customized Vim, including the Solarized theme.
 ### 2) Easiest install
 
 I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and
-configs for you to drag and drop it into your /Applications directory:
+configs in the package for you to drag and drop it into your /Applications 
+directory:
 
 [Download and enjoy!](https://www.dropbox.com/s/258ayi5tmkddypb/fMacVim.dmg)
 
@@ -53,7 +52,7 @@ Details
 fMacVim includes:
 
 * The best .vimrc I've been able to curate (no blogger/githubber was harmed on
-  this process :P).  Even though I didn't kept it minimal, I've made an effort
+  this process :P). Even though I didn't kept it minimal, I've made an effort
   to organize and comment everything. You should take a look at it!
 
 * A personal selection of essential vim plugins:
@@ -157,18 +156,18 @@ This is nowhere near to be perfect, so I expect to bring future updates.
 * I really want to make this package compatible for Linux too, with gtk-vim 
   instead :)
 
-I'd be pleased to hear any comments, ideas, code, questions or whatever you may
+I'd be pleased to hear any comments, ideas, code, questions, or whatever you may
 want to say!
 
-You'll easily find me at: [github.com/fbeeper](https://github.com/fbeeper) or
-[@fbeeper](http://twitter.com/fbeeper)
+You'll easily find me at: [github.com/fbeeper](https://github.com/fbeeper), or
+[@fbeeper](http://twitter.com/fbeeper).
 
 <br /> 
 License 
 ------- 
 
 JIC anybody asks, the Vim licence seems a good fit for any of the "work" I've
-done packing this ;) For any other concerns about licensing, take a look at
+done packing this ;) For any other concerns about licensing, take a look at:
 
 	:help license
 
