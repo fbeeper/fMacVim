@@ -114,6 +114,7 @@ set guioptions-=r 					" Disable scrollbars
 set guioptions-=R					" This info is available at the statusbar
 set guioptions-=l					" and the #s
 set guioptions-=L
+set guioptions-=T					" Hide toolbar
 set listchars=tab:<-,trail:.,extends:#,nbsp:.,eol:$ " prettier, don't you think?
 set whichwrap+=<,>,h,l,[,]			" Wrap navigation in normal and insert!
 set clipboard=unnamed				" Yank will go to mac's clipboard
