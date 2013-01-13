@@ -39,31 +39,31 @@ then
 	echo -ne " \x1B[00;31mNO\x1B[00m\n"
 	
 
-	echo -ne "Checking for Homebrew..."
-	if [[ ! -f $brew_cmd ]]
-	then
+	#echo -ne "Checking for Homebrew..."
+	#if [[ ! -f $brew_cmd ]]
+	#then
 		
-		echo -ne " \x1B[00;31mNO\n\x1B[00;34m"
+	#    echo -ne " \x1B[00;31mNO\n\x1B[00;34m"
 
-		if confirm "Do you want to install Homebrew packet manager now? [y/N]" 
-		then
+	#    if confirm "Do you want to install Homebrew packet manager now? [y/N]" 
+	#    then
 
-			echo -ne "\x1B[00m"
-			if [[ -f $ruby_cmd ]]
-			then
-				echo -ne "Installing Homebrew..."
-				ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-				echo -ne " \x1B[00;32mDONE\x1B[00m\n"
-				echo -ne "Installing MacVim (by Björn Winckler)..."
-				$brew_cmd install macvim
-				ln -s /usr/local/Cellar/macvim/7.3-65/MacVim.app /Applications
-				echo -ne " \x1B[00;32mDONE\x1B[00m\n"
-			else
-				echo -ne "\x1B[00;31mYou need either XCode or Ruby on your system to proceed. Leaving!\n\x1B[00m"
-				exit -1
-			fi
+	#        echo -ne "\x1B[00m"
+	#        if [[ -f $ruby_cmd ]]
+	#        then
+	#            echo -ne "Installing Homebrew..."
+	#            ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+	#            echo -ne " \x1B[00;32mDONE\x1B[00m\n"
+	#            echo -ne "Installing MacVim (by Björn Winckler)..."
+	#            $brew_cmd install macvim
+	#            ln -s /usr/local/Cellar/macvim/7.3-65/MacVim.app /Applications
+	#            echo -ne " \x1B[00;32mDONE\x1B[00m\n"
+	#        else
+	#            echo -ne "\x1B[00;31mYou need either XCode or Ruby on your system to proceed. Leaving!\n\x1B[00m"
+	#            exit -1
+	#        fi
 
-		else
+	#    else
 
 			echo -ne "\x1B[00m"
 			if [[ -f $clng_cmd ]]
@@ -71,7 +71,15 @@ then
 				echo -ne "Compiling MacVim (by Björn Winckler)"
 				git clone git://github.com/b4winckler/macvim.git /tmp/macvim
 				cd /tmp/macvim/src
-				CC=clang ./configure --with-features=huge --with-macarchs=`uname -m` $@
+				CC=clang ./configure --with-features=huge \
+					--with-tlib=ncurses \
+					--enable-multibyte \
+					--enable-perlinterp \
+					--enable-pythoninterp \
+					--enable-rubyinterp \
+					--with-ruby-command=/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby \
+					--enable-cscope \
+					--with-macarchs=`uname -m` $@
 				echo -ne "\nKeep Calm! this will take a while..."
 				make
 				cd MacVim/build/Release
@@ -83,14 +91,14 @@ then
 				exit -1
 			fi
 
-		fi
+	#    fi
 
-	else
-		echo -ne " \x1B[00;32mYES\x1B[00m\n"
-		echo -ne "Installing MacVim (by Björn Winckler)..."
-		$brew_cmd install macvim
-		echo -ne " \x1B[00;32mDONE\x1B[00m\n"
-	fi
+	#else
+	#    echo -ne " \x1B[00;32mYES\x1B[00m\n"
+	#    echo -ne "Installing MacVim (by Björn Winckler)..."
+	#    $brew_cmd install macvim
+	#    echo -ne " \x1B[00;32mDONE\x1B[00m\n"
+	#fi
 
 else
 
