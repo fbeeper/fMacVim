@@ -32,7 +32,7 @@ Another option is to clone this repositoty and execute the installation script:
 
 	git clone git://github.com/fbeeper/fMacVim.git 
 	cd fMacVim 
-	./fvim.sh
+	./install.sh
 
 Besides the opportunity of re-customization, this installation includes terminal
 support for the customized Vim, including the Solarized theme.
