@@ -12,7 +12,7 @@ I don't see this as another collection of dotfiles, but a practical selection
 of the best plugins and configs for those willing to enjoy the power of Vim on
 their Mac. I was inspired by [YADR](https://github.com/skwp/dotfiles) and
 [spf13-vim](https://github.com/spf13/spf13-vim), or other famous alternatives
-like [Janus](git://github.com/carlhuda/janus.git), but I did not wanted to have
+like [Janus](https://github.com/carlhuda/janus.git), but I did not wanted to have
 such a big package, I wanted to **keep it even simpler**. 
 
 If you don't like the idea of the complete package, **I strongly encourage you 
