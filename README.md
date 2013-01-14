@@ -12,7 +12,7 @@ I don't see this as another collection of dotfiles, but a practical selection
 of the best plugins and configs for those willing to enjoy the power of Vim on
 their Mac. I was inspired by [YADR](https://github.com/skwp/dotfiles) and
 [spf13-vim](https://github.com/spf13/spf13-vim), or other famous alternatives
-like [Janus](git://github.com/carlhuda/janus.git) but I did not wanted to have
+like [Janus](git://github.com/carlhuda/janus.git), but I did not wanted to have
 such a big package, I wanted to **keep it even simpler**. 
 
 If you don't like the idea of the complete package, **I strongly encourage you 
@@ -36,8 +36,9 @@ Clone this repositoty and execute the installation script:
 	./install.sh
 
 Besides the opportunity of re-customization, this installation includes terminal
-support for the customized Vim, including the Solarized theme. Note that you can
-find an uninstaller too ;)
+support for the customized Vim, including the Solarized theme. 
+
+Note that you will find an uninstaller too ;)
 
 	./uninstall.sh
 	
@@ -59,7 +60,6 @@ fMacVim includes:
 * The best .vimrc I've been able to curate (no blogger/githubber was harmed on
   this process :P). Even though I didn't kept it minimal, I've made an effort
   to organize and comment everything. You should take a look at it!
-
 <br />
 * A personal selection of essential vim plugins:
 
@@ -104,7 +104,6 @@ fMacVim includes:
 
  * [OpenGL and GLSL syntax hl](http://github.com/beyondmarc) (the missing
    highlighting) by Marc Costa
-
 <br />
 * Custom key bindings:
 
@@ -141,7 +140,7 @@ fMacVim includes:
  * ``,`` ``n`` Toggle line numbering mode in normal mode
  * And a huge list of things Vim could do
 
-
+<br />
 Anyway, I strongly encourage you to have a look at my .vimrc to discover what
 changes/customizations I've done! :D
 
