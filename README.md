@@ -11,13 +11,14 @@ Introduction
 I don't see this as another collection of dotfiles, but a practical selection 
 of the best plugins and configs for those willing to enjoy the power of Vim on
 their Mac. I was inspired by [YADR](https://github.com/skwp/dotfiles) and
-[spf13-vim](https://github.com/spf13/spf13-vim), but I did not wanted to have
+[spf13-vim](https://github.com/spf13/spf13-vim), or other famous alternatives
+like [Janus](git://github.com/carlhuda/janus.git) but I did not wanted to have
 such a big package, I wanted to **keep it even simpler**. 
 
 If you don't like the idea of the complete package, **I strongly encourage you 
 to scrabble and take anything you may like in here**! But I expect you to (at 
 least) say hi if you like it :P This includes GNU/Linux users, because most of 
-the code in here must work as well for you.
+the code in here must work as well for you (I'm using it actually :P).
 
 
 <br />
@@ -28,16 +29,20 @@ I provide you with two options (the easy or the easiest):
 
 ### 1) Easy install
 
-Another option is to clone this repositoty and execute the installation script:
+Clone this repositoty and execute the installation script:
 
 	git clone git://github.com/fbeeper/fMacVim.git 
 	cd fMacVim 
 	./install.sh
 
 Besides the opportunity of re-customization, this installation includes terminal
-support for the customized Vim, including the Solarized theme.
+support for the customized Vim, including the Solarized theme. Note that you can
+find an uninstaller too ;)
 
-### 2) Easiest install
+	./uninstall.sh
+	
+
+### 2) The easiest install
 
 I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and
 configs in the package for you to drag and drop it into your /Applications 
@@ -55,6 +60,7 @@ fMacVim includes:
   this process :P). Even though I didn't kept it minimal, I've made an effort
   to organize and comment everything. You should take a look at it!
 
+<br />
 * A personal selection of essential vim plugins:
 
  * [Pathogen.vim](http://github.com/tpope/vim-pathogen) (super easy plugin
@@ -99,7 +105,7 @@ fMacVim includes:
  * [OpenGL and GLSL syntax hl](http://github.com/beyondmarc) (the missing
    highlighting) by Marc Costa
 
-
+<br />
 * Custom key bindings:
 
  *Quick access to useful commands:*
@@ -145,16 +151,17 @@ What's the future of fMacVim?
 
 This is nowhere near to be perfect, so I expect to bring future updates.
 
-* I don't like my own installer, I'm thinking what to do with that...
 * An updater would be really necessary!
-* I should build .vimrc and .gvimrc separately.
+* I should build .vimrc and .gvimrc separately, I know!
 * I should consider splitting the .vimrc to make it easier to navigate/maintain.
 * I will consider creating a custom Toolbar/Menu.
 * A better documentation would be interesting, wouldn't it?
 * I've got some shortcuts/functions I haven't added to this release I might add
   in the future. Or not... because it would mean not keeping this simple.
+* I'm thinking to remove OpenGL highlighting from this package, it may be too 
+  specific for my needs.
 * I really want to make this package compatible for Linux too, with gtk-vim 
-  instead :)
+  instead of MacVim :)
 
 I'd be pleased to hear any comments, ideas, code, questions, or whatever you may
 want to say!
