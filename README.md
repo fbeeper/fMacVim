@@ -60,6 +60,7 @@ fMacVim includes:
 * The best .vimrc I've been able to curate (no blogger/githubber was harmed on
   this process :P). Even though I didn't kept it minimal, I've made an effort
   to organize and comment everything. You should take a look at it!
+
 <br />
 * A personal selection of essential vim plugins:
 
@@ -104,6 +105,7 @@ fMacVim includes:
 
  * [OpenGL and GLSL syntax hl](http://github.com/beyondmarc) (the missing
    highlighting) by Marc Costa
+
 <br />
 * Custom key bindings:
 
