@@ -49,7 +49,7 @@ I took [MacVim](https://github.com/b4winckler/macvim), included all plugins and
 configs in the package for you to drag and drop it into your /Applications 
 directory:
 
-[Download and enjoy!](https://www.dropbox.com/s/258ayi5tmkddypb/fMacVim.dmg)
+[Download and enjoy!](https://www.dropbox.com/s/8br375flfbvj7mt/fMacVim.dmg)
 
 <br /> 
 Details  
