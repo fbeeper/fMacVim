@@ -91,8 +91,8 @@ fMacVim includes:
  * [Supertab](http://github.com/ervandew/supertab) (handy addition for text
    completion) by Eric Van Dewoestine
 
- * [SnipMate](git clone http://github.com/garbas/vim-snipmate) (snippets
-   galore!) originally by Michael Sanders but current package by Rok Garbas
+ * [SnipMate](http://github.com/garbas/vim-snipmate) (snippets galore!)
+   originally by Michael Sanders but current package by Rok Garbas
 
  * [Fugitive.vim](http://github.com/tpope/vim-fugitive) (nice git integration)
    by Tim Pope
