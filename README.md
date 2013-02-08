@@ -179,3 +179,5 @@ done packing this ;) For any other concerns about licensing, take a look at:
 
 	:help license
 
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fbeeper/fMacVim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
